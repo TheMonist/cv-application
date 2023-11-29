@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import EduForm from './EduForm';
 
 const Education = ({ edu: initialEdu, onDelete, onSaveEdu, isNew }) => {

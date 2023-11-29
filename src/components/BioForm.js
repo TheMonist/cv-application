@@ -1,5 +1,3 @@
-import React from "react";
-
 const BioForm = ({ bio, onInputChange, onSave }) => {
     return (
         <div className="formDiv">

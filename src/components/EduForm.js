@@ -1,5 +1,3 @@
-import React from 'react';
-
 const EduForm = ({edu, onInputChange, onSave}) => {
     return (
         <div className='form-div'>
