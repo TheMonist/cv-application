@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EduForm = () => {
+const EduForm = ({edu, onInputChange, onSave}) => {
     return (
         <div className='form-div'>
             <form>
@@ -19,7 +19,7 @@ const EduForm = () => {
                 <label htmlFor="study">Study:</label>
                 <input 
                     type="text"
-                    value={edu.degree}
+                    value={edu.study}
                     onChange={(e) => onInputChange({...edu, study: e.target.value})} 
                 />
                 <label htmlFor="startDate">Start Date:</label>
