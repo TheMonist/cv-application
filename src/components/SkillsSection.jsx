@@ -3,7 +3,7 @@ import Button from "./Button";
 // import "..styles/SkillsSection.css";
 
 function SkillsSection({
-    skils,
+    skills,
     addItem,
     removeItem,
     onChange
