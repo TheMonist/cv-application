@@ -1,6 +1,6 @@
 import Input from "./Input";
 import Button from "./Button";
-// import "..styles/SkillsSection.css";
+import "../styles/SkillsSection.css";
 
 function SkillsSection({
     skills,

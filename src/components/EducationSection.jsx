@@ -1,6 +1,6 @@
 import Input from "./Input";
 import Button from "./Button"
-// import "../styles.EducationSection.css"
+import "../styles/EducationSection.css"
 
 function EducationSection({
     educations,

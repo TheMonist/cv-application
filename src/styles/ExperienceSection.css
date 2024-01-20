@@ -1,0 +1,42 @@
+.dates {
+  display: flex;
+  gap: 10px;
+  padding-left: 5px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: row;
+  gap: row;
+  justify-content: start;
+}
+
+.experience-title input {
+  width: 200px;
+}
+
+.experience-responsibilites {
+  padding: 5px;
+  width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .form .dates {
+    flex-direction: column;
+  }
+
+  .form .experience-details {
+    flex-direction: column;
+  }
+
+  .form .experience-details > div {
+    width: 100%;
+  }
+}

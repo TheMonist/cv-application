@@ -1,0 +1,17 @@
+.summary-section {
+  padding: 0px;
+  border-radius: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+}
+
+.summary-section div {
+  border-radius: 5px;
+}
+
+.summary {
+  padding: 15px;
+}

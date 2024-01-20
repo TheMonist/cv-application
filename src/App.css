@@ -3,40 +3,233 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100vw;
+  background-color: whitesmoke;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0 "opsz" 24;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.form {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(100, 100, 100, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+div.linebreak {
+  border-bottom: 0.5px solid rgba(137, 137, 137, 0.7);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.summary-section p,
+.experience-section p,
+.education-section p,
+.skill-section p,
+.language-section p {
+  font-weight: 500;
+  text-align: start;
+  padding: 5px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cv > .contact-section p.name {
+  font-size: 30px;
+  margin: 0px;
+  justify-self: start;
+}
+
+.cv > .contact-section p.role {
+  font-size: 20px;
+  margin: 0px;
+  justify-self: start;
+}
+
+.experience {
+  outline: 0.5px solid transparent;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.experience,
+.education,
+.skill,
+.language {
+  position: relative;
+}
+
+form .experience:hover {
+  outline: 0.5px solid rgba(137, 137, 137, 0.4);
+}
+
+.remove-experience,
+.remove-education,
+.remove-language {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  height: 30px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90px;
+}
+
+.remove-skill {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.remove-language {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.experience-section:not(:hover) .remove-experience,
+.experience-section:not(:hover) .add-experience {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.experience-section:hover .remove-experience,
+.experience-section:hover .add-experience {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.education-section:not(:hover) .remove-education,
+.education-section:not(:hover) .add-education {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.education-section:hover .remove-education,
+.education-section:hover .add-education {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.skill-section:not(:hover) .remove-skill,
+.skill-section:not(:hover) .add-skill {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill-section:hover .remove-skill,
+.skill-section:hover .add-skill {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.language-section:not(:hover) .remove-language,
+.language-section:not(:hover) .add-language {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.language-section:hover .remove-language,
+.language-section:hover .add-language {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.form .experience .remove-experience:focus,
+.form .education .remove-education:focus,
+.form .skill .remove-skill:focus,
+.form .language .remove-language:focus,
+.form .experience-section .add-experience:focus,
+.form .education-section .add-education:focus,
+.form .skill-section .add-skill:focus,
+.form .language-section .add-language:focus {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.cv .skills,
+.cv .languages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 15px;
+  justify-content: flex-start;
+}
+
+.cv .skills .skill,
+.cv .languages .language {
+  text-align: start;
+  width: max-content;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  gap: 5px;
+  height: 50px;
+}
+
+.experience-details {
+  justify-content: start;
+  align-items: start;
+}
+
+.experience-title-company-location {
+  min-width: 200px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  width: 200x;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form {
+    width: 98%;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

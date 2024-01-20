@@ -1,5 +1,5 @@
 import Input from "./Input";
-// import "../styles/ContactSection.css";
+import "../styles/ContactSection.css";
 
 function ContactSection({ onFieldChange, profile }) {
     return (

@@ -8,7 +8,7 @@ import LanguagesSection from "./components/LanguagesSection";
 import PreviewContainer from "./components/PreviewContainer";
 import SkillsSection from "./components/SkillsSection";
 import Summary from "./components/Summary";
-import html2pdf from "html2pdf";
+import html2pdf from "html2pdf.js";
 
 function App() {
     const defaultProfile = {
@@ -173,7 +173,6 @@ function App() {
         setProfile(updatedProfile);
     };
 
-    // Preview Elements
     const dialogRef = useRef(null);
     
     const openDialog = () => {
@@ -270,9 +269,7 @@ function App() {
             </div>
           </main>
         </>
-      );
+      ); 
 }
 
 export default App
-
-// https://github.com/sevleo/cv-app

@@ -1,5 +1,5 @@
-import Button from "./Button";;
-// import "../styles//PreviewContainer.css";
+import Button from "./Button";
+import "../styles//PreviewContainer.css";
 
 function PreviewContainer({
     dialogRef,

@@ -1,0 +1,157 @@
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+div.summary > textarea {
+  resize: none;
+  height: auto;
+  min-height: 50;
+  max-height: 150px;
+}
+
+div.experience textarea {
+  resize: none;
+  height: auto;
+  max-height: 600px;
+}
+
+div.name:hover,
+div.role:hover,
+div.phone:hover,
+div.email:hover,
+div.linkedin:hover,
+div.github:hover,
+div.summary:hover {
+  cursor: text;
+}
+
+div > input,
+div > textarea {
+  width: 100%;
+}
+
+div > input::placeholder,
+div > textarea::placeholder,
+div > label {
+  color: rgb(92, 92, 92);
+}
+
+div.contact-section > div.name > input {
+  font-size: 30px;
+}
+
+div.contact-section > div.name > input::placeholder {
+  font-size: 30px;
+}
+
+div.role > input,
+div.role > input::placeholder {
+  font-size: 20px;
+}
+
+div > input {
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+  /* padding-top: 15px; */
+}
+
+div > textarea {
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+}
+
+.contact-section > div > input:focus::placeholder,
+div > textarea:focus::placeholder {
+  color: transparent;
+}
+
+div > input,
+div > textarea {
+  outline: 0.5px solid transparent;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+div:hover > input,
+div:hover > textarea {
+  outline: 0.5px solid rgba(137, 137, 137, 0.4);
+}
+
+div > input:focus,
+div > textarea:focus {
+  outline: 0.5px solid rgba(137, 137, 137, 0.9);
+}
+
+div.contact-section > div,
+div.summary-section > div {
+  position: relative;
+}
+
+div > input:focus + label,
+div > textarea:focus + label {
+  display: none;
+}
+
+div > input:not(:focus) + label,
+div > textarea:not(:focus) + label {
+  display: none;
+}
+
+div.experience-from,
+div.experience-to,
+div.education-from,
+div.education-to {
+  display: flex;
+  flex-direction: row;
+}
+
+div.experience-from > input + label,
+div.experience-to > input + label,
+div.education-from > input + label,
+div.education-to > input + label {
+  display: block;
+  order: 1;
+  padding: 5px;
+  color: black;
+}
+
+div.experience-from > input,
+div.experience-to > input,
+div.education-from > input,
+div.education-to > input {
+  display: block;
+  order: 2;
+  /* border: 1px solid gray; */
+  width: 110px;
+}
+
+div > input:not(:placeholder-shown),
+div > textarea:not(:placeholder-shown) {
+  transition: all 0.2s ease-in-out;
+}
+
+div > input:placeholder-shown::placeholder,
+div > textarea:placeholder-shown::placeholder {
+  transition: all 0.2s ease-in-out;
+  color: rgba(165, 13, 13, 1);
+}
+
+div > input[type="date"][value=""],
+div > input[type="date"][value=""] + label {
+  color: rgba(165, 13, 13, 1);
+}
+
+@keyframes silo-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-1.4em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

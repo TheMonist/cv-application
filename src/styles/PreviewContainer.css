@@ -1,0 +1,129 @@
+.preview {
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+
+  flex-direction: column;
+  margin: 0;
+  max-height: none;
+}
+
+.preview.on {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv {
+  max-width: 700px;
+  min-width: 700px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.preview-buttons {
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+
+.preview-buttons > button {
+  background-color: white;
+}
+
+main .cv {
+  padding: 25px;
+}
+
+main .cv > .contact-section > p {
+  justify-self: start;
+}
+
+main .cv > .summary-section > div {
+  align-self: flex-start;
+}
+
+main .cv > .experience-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+main .cv .experience-section > div {
+  text-align: start;
+}
+
+main .cv .experience {
+  width: 100%;
+}
+
+main .cv .experience-details {
+  gap: 50px;
+}
+
+main .cv .education-degree-school-location {
+  min-width: 200px;
+}
+
+main .cv .education-details {
+  justify-content: start;
+  align-items: start;
+}
+
+main .cv .education-details > div {
+  text-align: start;
+}
+
+main .cv .skills,
+main .cv .languages {
+  padding: 10px;
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+main .cv .skills .skill,
+main .cv .languages .language {
+  text-align: start;
+  width: max-content;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+main .cv .languages {
+  padding: 10px;
+}
+
+p {
+  margin: 0px;
+  padding: 2px;
+}
+
+.cv .summary {
+  text-align: start;
+}
+
+@media screen and (max-width: 900px) {
+  .preview.on {
+    display: block;
+  }
+
+  dialog .cv {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .preview.on .preview-buttons {
+    margin-bottom: 10px;
+    width: 200px;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,19 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-degree-school-location {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}

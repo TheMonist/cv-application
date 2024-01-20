@@ -1,5 +1,5 @@
 import Input from "./Input";
-// import "../styles/Summary.css";
+import "../styles/SummarySection.css";
 
 function Summary({ onFieldChange, summary }) {
     return (
